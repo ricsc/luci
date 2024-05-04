@@ -46,13 +46,13 @@ function validateCert(priv, section_id, value) {
 		return true;
 
 	for (i = 0; i < lines.length; i++) {
-		if (lines[i].match(/^-{5}BEGIN ((|RSA |DSA )PRIVATE KEY|(|TRUSTED |X509 )CERTIFICATE)-{5}$/))
+		if (lines[i].match(/^-{5}BEGIN ((|RSA |DSA |ENCRYPTED )PRIVATE KEY|(|TRUSTED |X509 )CERTIFICATE)-{5}$/))
 			start = true;
 		else if (start && !lines[i].match(/^(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$/))
 			break;
 	}
 
-	if (!start || i < lines.length - 1 || !lines[i].match(/^-{5}END ((|RSA |DSA )PRIVATE KEY|(|TRUSTED |X509 )CERTIFICATE)-{5}$/))
+	if (!start ||  !lines[i].match(/^-{5}END ((|RSA |DSA |ENCRYPTED )PRIVATE KEY|(|TRUSTED |X509 )CERTIFICATE)-{5}$/))
 		return _('This does not look like a valid PEM file');
 
 	return true;
@@ -102,6 +102,10 @@ return network.registerProtocol('openfortivpn', {
 
 		o = s.taboption('general', form.Value, 'password', _('Password'));
 		o.password = true;
+
+		o = s.taboption("general", form.Value, "pem_passphrase", _("User Key Password"));
+		o.password = true;
+		o.optional = true;
 
 		o = s.taboption('general', form.TextValue, 'user_cert', _('User certificate (PEM encoded)'));
 		o.rows = 10;
