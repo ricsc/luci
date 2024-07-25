@@ -294,10 +294,7 @@ msgid ""
 "otherwise covered by the firewall framework. The commands are executed after "
 "each firewall restart, right after the default ruleset has been loaded."
 msgstr ""
-"Benutzerdefinierte Regeln ermöglichen das Ausführen belieber iptables-"
-"Befehle welche durch das Firewall-Framework nicht unterstützt werden. Die "
-"Befehle werden mit jedem Firewall-Neustart abgearbeitet, direkt nach dem "
-"Laden der Basisregeln."
+"Benutzerdefinierte nft Firewall Regeln"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:420
 msgid "DSCP classification"

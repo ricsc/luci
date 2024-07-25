@@ -3,7 +3,7 @@
 		"description": "Grant access to firewall configuration",
 		"read": {
 			"file": {
-				"/etc/firewall.user": [ "read" ]
+				"/etc/nftables.d/10-custom-filter-chains.nft": [ "read" ]
 			},
 			"ubus": {
 				"file": [ "read" ],
@@ -13,7 +13,7 @@
 		},
 		"write": {
 			"file": {
-				"/etc/firewall.user": [ "write" ]
+				"/etc/nftables.d/10-custom-filter-chains.nft": [ "write" ]
 			},
 			"ubus": {
 				"file": [ "write" ]
