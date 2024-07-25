@@ -72,7 +72,7 @@ return view.extend({
 
 		/* Netfilter flow offload support */
 
-		if (L.hasSystemFeature('offloading')) {
+		if (L.hasSystemFeature('deact-offloading')) {
 			s = m.section(form.TypedSection, 'defaults', _('Routing/NAT Offloading'),
 				_('Experimental feature. Not fully compatible with QoS/SQM.'));
 
