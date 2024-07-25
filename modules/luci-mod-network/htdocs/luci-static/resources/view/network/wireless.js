@@ -348,7 +348,9 @@ var CBIWifiFrequencyValue = form.Value.extend({
 				'': [ '', '-', true ],
 				'n': [
 					'HT20', '20 MHz', htmodelist.HT20,
-					'HT40', '40 MHz', htmodelist.HT40
+					'HT40', '40 MHz', htmodelist.HT40,
+					'VHT20', '20 MHz QAM-256', htmodelist.VHT20,
+					'VHT40', '40 MHz QAM-256', htmodelist.VHT40
 				],
 				'ac': [
 					'VHT20', '20 MHz', htmodelist.VHT20,
@@ -445,13 +447,21 @@ var CBIWifiFrequencyValue = form.Value.extend({
 
 		this.setValues(mode, this.modes);
 
-		if (/HE20|HE40|HE80|HE160/.test(htval))
+		if (/2g/.test(bandval))
+			if (/HE20|HE40|HE80|HE160/.test(htval))
 			mode.value = 'ax';
-		else if (/VHT20|VHT40|VHT80|VHT160/.test(htval))
-			mode.value = 'ac';
-		else if (/HT20|HT40/.test(htval))
+			else if (/HT20|HT40|VHT20|VHT40/.test(htval))
 			mode.value = 'n';
+			else
+			mode.value = '';
 		else
+			if (/HE20|HE40|HE80|HE160/.test(htval))
+			mode.value = 'ax';
+			else if (/VHT20|VHT40|VHT80|VHT160/.test(htval))
+			mode.value = 'ac';
+			else if (/HT20|HT40/.test(htval))
+			mode.value = 'n';
+			else
 			mode.value = '';
 
 		this.toggleWifiMode(elem);
@@ -471,6 +481,19 @@ var CBIWifiFrequencyValue = form.Value.extend({
 		}
 
 		this.toggleWifiBand(elem);
+
+		if (/HE20|HE40|HE80|HE160/.test(htval))
+				mode.value = 'ax';
+		else if (/VHT20|VHT40/.test(htval) && band.value == '2g')
+				mode.value = 'n';
+		else if (/VHT20|VHT40|VHT80|VHT160/.test(htval))
+				mode.value = 'ac';
+		else if (/HT20|HT40/.test(htval))
+				mode.value = 'n';
+		else
+				mode.value = '';
+			
+		this.toggleWifiMode(elem);
 
 		bwdt.value = htval;
 		chan.value = chval || (chan.options[0] ? chan.options[0].value : 'auto');
@@ -935,6 +958,10 @@ return view.extend({
 				o.ucisection = s.section;
 
 				if (hwtype == 'mac80211') {
+
+					o = ss.taboption('general', form.Flag, 'vendor_vht', _('Allow VHT on 2g'), _('Enables QAM-256 in 2.4GHz 802.11n, in HE mode enables VHT fallback'));
+					o.depends({'_freq': '2g', '!contains': true});
+
 					o = ss.taboption('general', form.Flag, 'legacy_rates', _('Allow legacy 802.11b rates'), _('Legacy or badly behaving devices may require legacy 802.11b rates to interoperate. Airtime efficiency may be significantly reduced where these are used. It is recommended to not allow 802.11b rates where possible.'));
 					o.depends({'_freq': '2g', '!contains': true});
 
