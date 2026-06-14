@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2026-05-28 07:03+0000\n"
+"PO-Revision-Date: 2026-06-11 08:15+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/luci/ko/>"
 "\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.6\n"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:212
 msgid "!known (not known)"
@@ -610,14 +610,6 @@ msgstr "<abbr title=\"라우터 광고(Router Advertisement)\">RA</abbr> 서비�
 msgid "<br/>"
 msgstr "<br/>"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:656
-msgid "<em>%s</em>"
-msgstr ""
-
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:710
-msgid "<em>Add</em>"
-msgstr "<em>추가</em>"
-
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/nftables.js:93
 msgctxt "nft relational \">\" operator expression"
 msgid "<var>%s</var> greater than <strong>%s</strong>"
@@ -669,11 +661,13 @@ msgid ""
 "A %s does not do anything by itself. It is a label that other directives "
 "test against."
 msgstr ""
+"태그(%s) 자체로는 아무런 동작도 하지 않습니다. 다른 지시어들이 조건을 검사할 "
+"때 사용하는 라벨일 뿐입니다."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:650
 msgctxt "A tag is an alphanumeric label"
 msgid "A %s is an alphanumeric label."
-msgstr ""
+msgstr "태그(%s)는 영문·숫자 라벨입니다."
 
 #: protocols/luci-proto-batman-adv/htdocs/luci-static/resources/protocol/batadv.js:86
 msgid ""
@@ -741,11 +735,11 @@ msgstr "ADSL"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1829
 msgid "ADSL (G.992.1) Annex A"
-msgstr "ADSL (G.992.1) 부록 A"
+msgstr "ADSL (G.992.1) Annex A"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1830
 msgid "ADSL (G.992.1) Annex B"
-msgstr "ADSL (G.992.1) 부록 B"
+msgstr "ADSL (G.992.1) Annex B"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1823
 msgid "ADSL (all variants) Annex A/L/M"
@@ -777,31 +771,31 @@ msgstr "ADSL (모든 규격) Annex M"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1832
 msgid "ADSL2 (G.992.3) Annex A"
-msgstr "ADSL2 (G.992.3) 부록 A"
+msgstr "ADSL2 (G.992.3) Annex A"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1833
 msgid "ADSL2 (G.992.3) Annex B"
-msgstr "ADSL2 (G.992.3) 부록 B"
+msgstr "ADSL2 (G.992.3) Annex B"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1834
 msgid "ADSL2 (G.992.3) Annex L"
-msgstr "ADSL2 (G.992.3) 부록 L"
+msgstr "ADSL2 (G.992.3) Annex L"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1835
 msgid "ADSL2 (G.992.3) Annex M"
-msgstr "ADSL2 (G.992.3) 부록 M"
+msgstr "ADSL2 (G.992.3) Annex M"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1836
 msgid "ADSL2+ (G.992.5) Annex A"
-msgstr "ADSL2+ (G.992.5) 부록 A"
+msgstr "ADSL2+ (G.992.5) Annex A"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1837
 msgid "ADSL2+ (G.992.5) Annex B"
-msgstr "ADSL2+ (G.992.5) 부록 B"
+msgstr "ADSL2+ (G.992.5) Annex B"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1838
 msgid "ADSL2+ (G.992.5) Annex M"
-msgstr "ADSL2+ (G.992.5) 부록 M"
+msgstr "ADSL2+ (G.992.5) Annex M"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1828
 msgid "ANSI T1.413"
@@ -1422,9 +1416,8 @@ msgid "Allowed maximum of connected clients"
 msgstr "허용된 최대 접속 클라이언트 수"
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:1450
-#, fuzzy
 msgid "Allowed maximum of internal"
-msgstr "클라이언트당 최대 내부 경로 수"
+msgstr "내부 최대 허용치"
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:1457
 msgid "Allowed maximum of new connections"
@@ -1498,7 +1491,7 @@ msgstr "이 장치에 대한 간단한 설명(선택 사항)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1817
 msgid "Annex"
-msgstr "부록"
+msgstr "Annex"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1140
 msgid "Announce DNS domains"
@@ -1929,6 +1922,7 @@ msgstr "NTP 서버 바인딩"
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6.js:64
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6tap.js:69
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:48
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:144
 #: protocols/luci-proto-vti/htdocs/luci-static/resources/protocol/vti.js:59
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:132
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:132
@@ -1962,6 +1956,7 @@ msgstr ""
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6.js:64
 #: protocols/luci-proto-gre/htdocs/luci-static/resources/protocol/grev6tap.js:69
 #: protocols/luci-proto-ipip/htdocs/luci-static/resources/protocol/ipip.js:48
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:144
 #: protocols/luci-proto-vti/htdocs/luci-static/resources/protocol/vti.js:59
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan.js:132
 #: protocols/luci-proto-vxlan/htdocs/luci-static/resources/protocol/vxlan6.js:132
@@ -2060,6 +2055,12 @@ msgstr "버퍼"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dns.js:254
 msgid "By default, dnsmasq caches A, AAAA, CNAME and SRV DNS record types."
 msgstr "기본적으로 dnsmasq는 A, AAAA, CNAME, SRV 레코드 유형을 캐싱합니다."
+
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:131
+msgid ""
+"CA certificate (PEM encoded; Use instead of system-wide store to verify the "
+"gateway certificate."
+msgstr ""
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:178
 msgid "CA certificate; if empty it will be saved after the first connection."
@@ -3134,7 +3135,7 @@ msgstr "삭제 요청 실패: %s"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/plugins.js:146
 msgid "Delete this config"
-msgstr ""
+msgstr "이 설정 삭제"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:961
 msgid "Delete this network"
@@ -3851,7 +3852,7 @@ msgstr "IP 세트 편집"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:716
 #, fuzzy
 msgid "Edit Match"
-msgstr "일치 조건 편집"
+msgstr "매치 편집"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:572
 msgid "Edit PXE/TFTP/BOOTP Host"
@@ -4162,7 +4163,7 @@ msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/pwpolicy.js:28
 msgid "Enable password policy"
-msgstr ""
+msgstr "암호 정책 활성화"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:1160
 msgid "Enable promiscuous mode"
@@ -4278,6 +4279,8 @@ msgid ""
 "Encountering chosen DHCP %s (or also its %s) from clients triggers dnsmasq "
 "to set alphanumeric %s."
 msgstr ""
+"클라이언트로부터 선택된 DHCP %s(또는 해당 %s)을 수신하면 dnsmasq가 영문·숫자"
+"로 구성된 %s를 설정하도록 트리거합니다."
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:1182
 msgid "Encrypt and authenticate all control channel packets with the key"
@@ -5327,7 +5330,7 @@ msgstr "네트워크 상태 정보에 접근 권한 부여"
 
 #: modules/luci-mod-system/root/usr/share/rpcd/acl.d/luci-mod-system.json:228
 msgid "Grant access to password policy configuration"
-msgstr ""
+msgstr "암호 정책 설정에 접근 권한 부여"
 
 #: modules/luci-mod-status/root/usr/share/rpcd/acl.d/luci-mod-status-index.json:52
 msgid "Grant access to port status display"
@@ -6059,12 +6062,14 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1197
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/ipip6.js:70
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:135
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:158
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:129
 msgid "If unchecked, no default route is configured"
 msgstr "선택 해제 시, 기본 경로를 설정하지 않습니다"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1201
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:146
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:162
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:140
 msgid "If unchecked, the advertised DNS server addresses are ignored"
 msgstr "선택 해제 시, 제공된 DNS 서버 주소를 무시합니다"
@@ -6165,12 +6170,12 @@ msgstr "할당 태그"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:702
 msgid "In other words: \"%s these %s to set this %s\"."
-msgstr ""
+msgstr "즉, \"%s 과정을 이 %s을 기준으로 하여 이 %s를 할당한다.\""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:652
 msgctxt "this tag gets these options"
 msgid "In other words: \"This %s gets these %s\"."
-msgstr ""
+msgstr "즉, \"이 태그(%s)에는 이 %s이 적용된다.\"라는 의미입니다."
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/protocol/modemmanager.js:152
 msgid "In seconds"
@@ -6442,7 +6447,7 @@ msgstr "내부"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:704
 msgid "Internally, these configuration entries are called %s."
-msgstr ""
+msgstr "내부적으로 이 설정 항목의 명칭은 매치(%s)입니다."
 
 #: protocols/luci-proto-modemmanager/htdocs/luci-static/resources/view/modemmanager/status.js:85
 msgid "International Mobile Station Equipment Identity"
@@ -6482,6 +6487,11 @@ msgstr "잘못된 식별자"
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:73
 msgid "Invalid APN provided"
 msgstr "잘못된 APN 입력"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:38
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:41
+msgid "Invalid Base64 key string"
+msgstr "잘못된 Base64 키 문자열"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:729
 msgid ""
@@ -7153,6 +7163,10 @@ msgstr "사용자 정의 6 (Local 6)"
 msgid "Local 7"
 msgstr "사용자 정의 7 (Local 7)"
 
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:171
+msgid "Local IP address"
+msgstr "로컬 IP 주소"
+
 #: modules/luci-base/htdocs/luci-static/resources/network.js:12
 #: modules/luci-compat/luasrc/model/network.lua:30
 msgid "Local IP address is invalid"
@@ -7504,7 +7518,7 @@ msgstr "마스터 (VLAN)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:708
 msgid "Match %s, Tag %s, sets a tag of the same name"
-msgstr ""
+msgstr "매치 %s, 태그 %s로 지정하면, 동일한 이름의 태그가 할당되며"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:1092
 msgid "Match Tag"
@@ -7581,7 +7595,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:705
 msgid "Matching option syntax: %s."
-msgstr ""
+msgstr "매칭 옵션 입력 형식: %s."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:986
 msgid "Max <abbr title=\"Router Advertisement\">RA</abbr> interval"
@@ -8571,6 +8585,8 @@ msgstr ""
 msgctxt "invalid tag combinations may cause crashes"
 msgid "Note: invalid %s combinations may cause dnsmasq to crash silently."
 msgstr ""
+"주의: 잘못된 %s 조합은 dnsmasq가 알림 없이 강제 종료(crash)되는 원인이 될 수 "
+"있습니다."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1132
 msgid ""
@@ -8787,9 +8803,17 @@ msgstr "iptables 규칙 개요 열기…"
 msgid "Open list..."
 msgstr "목록 열람..."
 
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:63
+msgid "OpenConnect"
+msgstr "OpenConnect"
+
 #: modules/luci-compat/luasrc/model/network/proto_openconnect.lua:9
 msgid "OpenConnect (CISCO AnyConnect)"
 msgstr "OpenConnect (CISCO AnyConnect)"
+
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:63
+msgid "OpenFortivpn"
+msgstr "OpenFortivpn"
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:1624
 msgid "OpenVPN"
@@ -8878,6 +8902,10 @@ msgstr ""
 msgid "Optional, free-form notes about this device"
 msgstr "이 장치에 대한 자유 형식 메모(선택 사항)"
 
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:149
+msgid "Optional, in seconds. If set to '0', no reconnect is attempted."
+msgstr ""
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:176
 msgid ""
 "Optional. 32-bit mark for packets during firewall processing. Enter value in "
@@ -8958,6 +8986,11 @@ msgid ""
 "Recommended value if this device is behind a NAT is 25."
 msgstr ""
 
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:176
+msgid ""
+"Optional. Specify the realm if your VPN gateway uses custom login portals."
+msgstr ""
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:151
 msgid "Optional. UDP port used for outgoing and incoming packets."
 msgstr ""
@@ -8984,7 +9017,7 @@ msgstr "옵션:"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:703
 msgid "Or \"These %s set this %s\"."
-msgstr ""
+msgstr "또는 \"이 %s이 이 %s를 할당한다.\"로 이해할 수 있습니다."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dns.js:365
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dns.js:397
@@ -9332,6 +9365,7 @@ msgstr "패스스루 (물리 장치의 모든 트래픽을 단일 MACVLAN에 전
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:92
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:133
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:145
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:103
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:58
 #: protocols/luci-proto-yggdrasil/htdocs/luci-static/resources/protocol/yggdrasil.js:301
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:19
@@ -9340,7 +9374,7 @@ msgstr "암호"
 
 #: modules/luci-mod-system/root/usr/share/luci/menu.d/luci-mod-system.json:38
 msgid "Password Policy"
-msgstr ""
+msgstr "암호 정책"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:35
 msgid "Password authentication"
@@ -9534,6 +9568,10 @@ msgstr ""
 msgid "Persistent Keep Alive"
 msgstr ""
 
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:149
+msgid "Persistent reconnect interval"
+msgstr ""
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:310
 msgid "PersistentKeepAlive setting is invalid"
 msgstr "PersistentKeepAlive 설정이 잘못됨"
@@ -9632,19 +9670,19 @@ msgstr "정책: <strong>%h</strong> (%h)"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:60
 msgid "Policy: contain digits"
-msgstr ""
+msgstr "정책: 숫자 필수"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:66
 msgid "Policy: contain special characters"
-msgstr ""
+msgstr "정책: 특수 문자 필수"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:63
 msgid "Policy: contain uppercase/lowercase"
-msgstr ""
+msgstr "정책: 대문자 및 소문자 필수"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:57
 msgid "Policy: min. length of %s characters"
-msgstr ""
+msgstr "정책: 최소 %s자 이상"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dns.js:360
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/dropbear.js:31
@@ -9726,7 +9764,7 @@ msgstr "위임된 접두사"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:706
 msgid "Prefix named (IPv6) options with %s."
-msgstr ""
+msgstr "명칭이 지정된 (IPv6) 옵션 앞에는 %s을 붙이세요."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:217
 msgid "Prefix suppressor"
@@ -9738,6 +9776,8 @@ msgid ""
 "Prepend a %s with %s to invert their domain of application, e.g. to send "
 "options to a host lacking a %s."
 msgstr ""
+"태그(%s) 앞에 %s를 붙이면 적용 범위가 반전됩니다. (예: 특정 태그(%s)가 없는 "
+"호스트에 옵션을 전송하려는 경우)"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:94
 msgid "Present"
@@ -10159,6 +10199,10 @@ msgstr "다음 소프트웨어 저장소 공개 키를 삭제하시겠습니까?
 msgid "Really switch protocol?"
 msgstr "정말 프로토콜 변경을 원하세요?"
 
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:176
+msgid "Realm"
+msgstr ""
+
 #: modules/luci-mod-status/root/usr/share/luci/menu.d/luci-mod-status.json:139
 msgid "Realtime Graphs"
 msgstr "실시간 그래프"
@@ -10247,7 +10291,7 @@ msgstr "참조"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/channel_analysis.js:436
 msgid "Refresh Channels"
-msgstr "채널 새로고침"
+msgstr "채널 새로 고침"
 
 #: modules/luci-base/htdocs/luci-static/resources/luci.js:2743
 msgid "Refreshing"
@@ -10499,11 +10543,11 @@ msgstr "요청 시간 초과"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/pwpolicy.js:32
 msgid "Require a minimum password length"
-msgstr ""
+msgstr "최소 암호 길이"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/pwpolicy.js:38
 msgid "Require digits"
-msgstr ""
+msgstr "숫자 포함 필수"
 
 #: protocols/luci-proto-openvpn/htdocs/luci-static/resources/protocol/openvpn.js:1217
 msgid "Require explicit designation on certificate"
@@ -10534,11 +10578,11 @@ msgstr ""
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/pwpolicy.js:50
 msgid "Require special characters <br/> (e.g., !, @, #, $, %, &)"
-msgstr ""
+msgstr "특수 문자 포함 필수 <br/> (예: !, @, #, $, %, &)"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/pwpolicy.js:44
 msgid "Require upper/lower case"
-msgstr ""
+msgstr "대소문자 포함 필수"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1756
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2100
@@ -10908,7 +10952,7 @@ msgstr "라우터 우선순위"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:115
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:127
 msgid "Router username"
-msgstr ""
+msgstr "라우터 사용자 이름"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/routes.js:29
 msgid ""
@@ -11916,7 +11960,7 @@ msgstr "시작 우선순위"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2284
 msgid "Start refresh"
-msgstr "새로고침 시작"
+msgstr "새로 고침 시작"
 
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:5478
 msgid "Starting configuration apply…"
@@ -12004,7 +12048,7 @@ msgstr "WPS 중지"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2193
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2289
 msgid "Stop refresh"
-msgstr "새로고침 중지"
+msgstr "새로 고침 중지"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/25_storage.js:38
 msgid "Storage"
@@ -12945,7 +12989,7 @@ msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:650
 msgid "They filter which options apply to which hosts."
-msgstr ""
+msgstr "어떤 호스트에 어떤 옵션을 적용할지 필터링하는 역할을 합니다."
 
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/6rd.js:49
 msgid "This IPv4 address of the relay"
@@ -12954,6 +12998,11 @@ msgstr ""
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2042
 msgid "This authentication type is not applicable to the selected EAP method."
 msgstr "이 인증 유형은 선택한 EAP 방식에 적용할 수 없습니다."
+
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:48
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:56
+msgid "This does not look like a valid PEM file"
+msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1777
 msgid ""
@@ -13706,6 +13755,7 @@ msgstr "DHCPv6 사용"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1201
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:145
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:162
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:139
 msgid "Use DNS servers advertised by peer"
 msgstr "피어에서 제공한 DNS 서버 사용"
@@ -13762,6 +13812,7 @@ msgstr "사용자 정의 DNS 서버 사용"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1197
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:134
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:158
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:128
 msgid "Use default gateway"
 msgstr "기본 게이트웨이 사용"
@@ -13769,6 +13820,7 @@ msgstr "기본 게이트웨이 사용"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1214
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/ipip6.js:73
 #: protocols/luci-proto-mbim/htdocs/luci-static/resources/protocol/mbim.js:139
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:166
 #: protocols/luci-proto-qmi/htdocs/luci-static/resources/protocol/qmi.js:133
 msgid "Use gateway metric"
 msgstr "게이트웨이 메트릭 사용"
@@ -13804,13 +13856,13 @@ msgstr "시스템 인증서 사용"
 msgid "Use system certificates for inner-tunnel"
 msgstr ""
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:710
-msgid "Use the %s Button to add a new %s."
-msgstr ""
-
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:656
 msgctxt "use the add button to add a new tag"
-msgid "Use the %s button to add a new %s."
+msgid "Use the <em>%s</em> button to add a new %s."
+msgstr ""
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:710
+msgid "Use the <em>Add</em> Button to add a new %s."
 msgstr ""
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:777
@@ -13878,6 +13930,7 @@ msgid "User"
 msgstr "사용자 (User)"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:154
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:106
 msgid "User certificate (PEM encoded)"
 msgstr "사용자 인증서 (PEM 인코딩)"
 
@@ -13886,11 +13939,13 @@ msgid "User identifier"
 msgstr "사용자 식별자(UID)"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:166
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:118
 msgid "User key (PEM encoded)"
 msgstr "사용자 키 (PEM 인코딩)"
 
 #: modules/luci-base/ucode/template/sysauth.ut:29
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:143
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:101
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:56
 #: themes/luci-theme-bootstrap/ucode/template/themes/bootstrap/sysauth.ut:13
 msgid "Username"
@@ -13959,10 +14014,24 @@ msgstr "VPN 로컬 주소"
 msgid "VPN Local port"
 msgstr "VPN 로컬 포트"
 
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:94
+msgid "VPN Protocol"
+msgstr "VPN 프로토콜"
+
+#: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:103
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:93
 #: protocols/luci-proto-ppp/htdocs/luci-static/resources/protocol/pptp.js:58
 #: protocols/luci-proto-vpnc/htdocs/luci-static/resources/protocol/vpnc.js:39
 msgid "VPN Server"
 msgstr "VPN 서버"
+
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:154
+msgid "VPN Server certificate's SHA256 hash"
+msgstr ""
+
+#: protocols/luci-proto-openfortivpn/htdocs/luci-static/resources/protocol/openfortivpn.js:96
+msgid "VPN Server port"
+msgstr "VPN 서버 포트"
 
 #: protocols/luci-proto-openconnect/htdocs/luci-static/resources/protocol/openconnect.js:141
 msgid "VPN Server's certificate SHA1 hash"
@@ -14245,7 +14314,7 @@ msgstr "대역폭"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/dhcp.js:707
 msgid "Wildcards (%s) allowed."
-msgstr ""
+msgstr "와일드카드 (%s)도 사용할 수 있습니다."
 
 #: protocols/luci-proto-wireguard/root/usr/share/luci/menu.d/luci-proto-wireguard.json:3
 msgid "WireGuard"
@@ -14575,6 +14644,7 @@ msgid ""
 "dnsmasq conditionally applies chosen DHCP options when a specific %s is "
 "encountered."
 msgstr ""
+"dnsmasq는 특정 태그(%s)를 만나면 선택된 DHCP 옵션을 조건부로 적용합니다."
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:613
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:648
@@ -14885,7 +14955,7 @@ msgstr "라우팅"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/password.js:105
 msgid "rpcd username"
-msgstr ""
+msgstr "rpcd 사용자 이름"
 
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/29_ports.js:275
 msgid "searching"
@@ -15171,6 +15241,12 @@ msgstr "유효한 정수 값"
 msgid "valid multicast MAC address"
 msgstr "유효한 멀티캐스트 MAC 주소"
 
+#: modules/luci-base/htdocs/luci-static/resources/validation.js:1006
+msgid ""
+"valid network device name between 1 and 15 characters not containing \":\", "
+"\"/\", \"%\" or spaces"
+msgstr "유효한 네트워크 장치 이름 (\":\", \"/\", \"%\", 공백 제외 1~15자)"
+
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:1004
 msgid "valid network device name, not \".\" or \"..\""
 msgstr "유효한 네트워크 장치 이름 (\".\", \"..\" 제외)"
@@ -15244,6 +15320,8 @@ msgid ""
 "when number %s appears in the list of architectures sent by the client in "
 "option %s."
 msgstr ""
+"이는 숫자 %s이 옵션 %s 내 클라이언트가 보낸 아키텍처 목록에 나타날 때 적용됩"
+"니다."
 
 #: modules/luci-base/htdocs/luci-static/resources/validation.js:931
 msgid "whitespace"
@@ -15279,6 +15357,19 @@ msgstr "{example_nx} 설정 시 {nxdomain}을 반환합니다."
 msgid "« Back"
 msgstr "« 이전"
 
+#~ msgid "<em>%s</em>"
+#~ msgstr "<em>%s</em>"
+
+#~ msgid "<em>Add</em>"
+#~ msgstr "<em>추가</em>"
+
+#~ msgid "Use the %s Button to add a new %s."
+#~ msgstr "%s 버튼을 사용하여 새 일치 조건(%s)을 추가하세요."
+
+#~ msgctxt "use the add button to add a new tag"
+#~ msgid "Use the %s button to add a new %s."
+#~ msgstr "%s 버튼을 사용하여 새 태그(%s)를 추가하세요."
+
 #~ msgid "Changes the administrator password for accessing the device"
 #~ msgstr "장비 접근을 위한 관리자 암호를 변경합니다"
 
@@ -15290,29 +15381,6 @@ msgstr "« 이전"
 
 #~ msgid "IP sets"
 #~ msgstr "IP 세트"
-
-#~ msgid "Invalid Base64 key string"
-#~ msgstr "잘못된 Base64 키 문자열"
-
-#~ msgid "Local IP address"
-#~ msgstr "로컬 IP 주소"
-
-#~ msgid "OpenConnect"
-#~ msgstr "OpenConnect"
-
-#~ msgid "OpenFortivpn"
-#~ msgstr "OpenFortivpn"
-
-#~ msgid "VPN Protocol"
-#~ msgstr "VPN 프로토콜"
-
-#~ msgid "VPN Server port"
-#~ msgstr "VPN 서버 포트"
-
-#~ msgid ""
-#~ "valid network device name between 1 and 15 characters not containing \":"
-#~ "\", \"/\", \"%\" or spaces"
-#~ msgstr "유효한 네트워크 장치 이름 (\":\", \"/\", \"%\", 공백 제외 1~15자)"
 
 #~ msgid "Grant access to OpenVPN configuration"
 #~ msgstr "OpenVPN 설정에 접근 권한 부여"
